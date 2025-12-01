@@ -1,6 +1,5 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -14,11 +13,8 @@ a {
 }
 
 .container .left img {
-  width: 300px;
+  width: 317px;
   margin: -28px;
-  height: 106px;
-  margin: -28px;
-  font-size: 32px;
 }
 
 .container {
@@ -27,8 +23,7 @@ a {
   align-items: center;
   max-width: 1060px;
   margin-inline: auto;
-  padding: 6px 0;
-  gap: 80px;
+  gap: 50px;
 }
 
 .container .left {
@@ -37,8 +32,7 @@ a {
 
 p {
   font-weight: normal;
-  margin-top: 15px;
-  line-height: 1.2;
+  margin-top: 10px;
   font-size: 28px;
 }
 
@@ -49,22 +43,25 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 15px;
+  margin-bottom: 10px;
+  line-height: 10px;
 }
 
 .form-container {
   padding: 16px;
-  border-radius: 6px;
+  border-radius: 8px;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
   width: 396px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 form input {
-  padding: 16px;
+  padding: 17px;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 17px;
   border: 1px solid #dddfe2;
   font-family: "Helvetica", sans-serif;
 }
@@ -73,14 +70,19 @@ form input:focus::placeholder {
   color: #a9a9a9;
 }
 
-form input:focus {
-  outline: 1px solid #1877f2;
-}
+form input:focus {      
+    border-color: #0866ff;
+    box-shadow: 0 0 0 2px #e7f3ff;
+    outline: none;
+}       
 
 form a {
   font-size: 14px;
-  color: #1877f2;
+  font-weight: 500;
+  cursor: pointer;
+  color: #0866ff;
   padding-bottom: 20px;
+  margin-top: 16px;
   margin-bottom: 20px;
   border-bottom: 1px solid #dddfe2;
 }
@@ -94,7 +96,7 @@ form a:hover {
   color: #fff;
   border: none;
   padding: 12px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
@@ -102,13 +104,12 @@ form a:hover {
 
 .btn.green {
   font-size: 17px;
-  width: 10px;
   background: #42b72a;
-  border-radius: 6px;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: -10px;
+  padding-bottom: 10px;
   transition: all 300ms ease;
 }
 
@@ -124,10 +125,9 @@ form a:hover {
   color: #000;
 }
 
-.right p a:hover  {
-    text-decoration: underline;
+.right p a:hover {
+  text-decoration: underline;
 }
-  
 
 @media (max-width: 900px) {
   .container {
@@ -136,7 +136,7 @@ form a:hover {
     gap: 20px;
   }
 
-  p {
+p {
     font-size: 24px;
     width: 400px;
     line-height: 1.2;
