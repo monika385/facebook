@@ -135,7 +135,6 @@
 }
   
 
-<<<<<<< HEAD
 .link3 {
     display: flex;
     gap: 20px;
@@ -224,22 +223,3 @@
   font-size: 12px;
   color: #999;
 }
-=======
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-  p {
-    font-size: 24px;
-    width: 400px;
-    line-height: 1.2;
-  }
-
-  .container .left {
-    margin-top: 40px;
-  }
-}
->>>>>>> b5ce78e (Describe what you changed here)
