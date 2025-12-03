@@ -4,6 +4,7 @@
     overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 .top-bar {
     display: flex;
     align-items: center;
@@ -12,6 +13,14 @@
     border-bottom: -10px;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
     
+=======
+body {
+  margin: 0;
+  background: #f0f2f5;
+  font-family: "Helvetica", sans-serif;
+  line-height: 1.34;
+
+>>>>>>> a792ae7 (Initial commit)
 }
 
 .fb-logo {
