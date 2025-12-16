@@ -35,12 +35,12 @@ a {
   margin-inline: auto;
   gap: 50px;
   margin-top: 18px;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 
 }
 
 .container .left {
-  margin-top: -120px;
+  margin-top: -190px;
 }
 
 p {
@@ -64,7 +64,7 @@ form {
 }
 
 .form-container {
-  padding: 16px;
+  padding: 12px;
   padding-bottom: -10px;
   border-radius: 8px;
   background: #fff;
@@ -111,7 +111,7 @@ form a:hover {
   color: #fff;
   border: none;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 6px;
   font-size: 20px;
   font-weight: 600;
   cursor: pointer;
@@ -157,7 +157,7 @@ footer .footer-contents {
     padding-bottom: 70px;
     margin-top: 50px;
     padding-top: 5px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
 }
 
 footer ol {
@@ -167,6 +167,7 @@ footer ol {
     padding: 8px;
     margin-top: 5px;
     margin-bottom: 15px;
+    margin: 5px 0 8px;
 }
 
 footer ol:first-child {
@@ -184,14 +185,14 @@ footer ol:first-child li:last-child button {
 
 footer {
   background: #fff;
-  /* padding: 4px 0 40px; */
+  padding: 0;
 }
 
 .footer-contents {
   max-width: 1000px;
   margin: 0 auto;
    line-height: 1.4;
-  /* padding: 0 10px; */
+  padding-top: 10px;
 }
 
 footer ol {
@@ -200,7 +201,6 @@ footer ol {
   list-style: none;
   padding: 0;
   margin: 10px 0 15px;
-  /* margin-bottom: 30px; */
 }
 
 footer ol.languages {
@@ -255,24 +255,5 @@ p {
 
   .container .left {
     margin-top: 40px;
-  }
-}
-@media (max-width: 600px) {
-  .fb-footer {
-    font-size: 11px;
-  }
-
-  .fb-footer ul {
-    justify-content: center;
-  }
-
-  .fb-footer ul li {
-    margin: 4px 6px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .fb-footer {
-    font-size: 12px;
   }
 }
