@@ -257,3 +257,22 @@ p {
     margin-top: 40px;
   }
 }
+@media (max-width: 600px) {
+  .fb-footer {
+    font-size: 11px;
+  }
+
+  .fb-footer ul {
+    justify-content: center;
+  }
+
+  .fb-footer ul li {
+    margin: 4px 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .fb-footer {
+    font-size: 12px;
+  }
+}
