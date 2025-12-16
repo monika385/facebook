@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
  
 >>>>>>> f677df9 (fixed footer text alignment)
+=======
+>>>>>>> f8730cb (footer text hover fixed)
 }
 
 body {
@@ -11,7 +14,9 @@ body {
   background: #f0f2f5;
   font-family: "Helvetica", sans-serif;
   line-height: 1.34;
-
+  height: 700px;
+  margin-top: 120px;
+  padding-right: -20px;
 }
 
 a {
@@ -25,11 +30,12 @@ a {
 
 .container {
   display: flex;
-  height: 100vh;
   align-items: center;
   max-width: 1060px;
   margin-inline: auto;
   gap: 50px;
+  margin-top: 10px;
+
 }
 
 .container .left {
@@ -40,10 +46,12 @@ p {
   font-weight: normal;
   margin-top: 10px;
   font-size: 28px;
+  padding-right: 40px;
 }
 
 .container .right {
   text-align: center;
+  margin-right: -40px;
 }
 
 form {
@@ -56,6 +64,7 @@ form {
 
 .form-container {
   padding: 16px;
+  padding-bottom: -20px;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -65,7 +74,7 @@ form {
 }
 
 form input {
-  padding: 17px;
+  padding: 15px;
   border-radius: 6px;
   font-size: 17px;
   border: 1px solid #dddfe2;
@@ -98,7 +107,7 @@ form a:hover {
 }
 
 .btn {
-  background: #1877f2;
+  background: #0866ff;
   color: #fff;
   border: none;
   padding: 12px;
@@ -111,11 +120,12 @@ form a:hover {
 .btn.green {
   font-size: 17px;
   background: #42b72a;
+  border-radius: 6px;
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 10px;
   margin-top: -10px;
-  padding-bottom: 10px;
+  padding:  14px;
   transition: all 300ms ease;
 }
 
@@ -125,6 +135,7 @@ form a:hover {
 
 .right p {
   font-size: 14px;
+  padding-bottom: 100px;
 }
 
 .right p a {
@@ -135,18 +146,25 @@ form a:hover {
   text-decoration: underline;
 }
 
-.footer {
+footer .footer-contents {
     position: relative;
     max-width: 1000px;
     margin: 0 auto;
-    padding-top: 100px;
+    background: #fff;
+    height: auto;
+    width: 200%;
+    padding-bottom: 70px;
+    margin-top: 50px;
+    padding-top: 8px;
+    padding-bottom: 20px;
+    
 }
 
 footer ol {
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
-    padding: 10px;
+    padding: 8px;
 }
 
 footer ol:first-child {
@@ -157,46 +175,61 @@ footer ol:first-child li:last-child button {
     background-color: #f5f6f7;
     border: 1px solid #ccd0d5;
     outline: none;
-    color: #4b4f56;
+    color: #65676b;
     padding: 0 8px;
     font-weight: 700;
 }
 
+footer {
+  background: #fff;
+  padding: 30px 0;
+}
+
+.footer-contents {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+footer ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+}
+
+footer ol.languages {
+  border-bottom: 1px solid #dddfe2;
+  padding-bottom: 8px;
+}
+
 footer ol li {
-    padding-right: 10px;
-    font-size: 12px;
-    color: #737373;
-    padding-top: -20px;
+  font-size: 12px;
+  color: #737373;
+  margin-right: 12px;
+  line-height: 1.8;
 }
 
 footer ol li a {
-    text-decoration: none;
-    color: #737373;
+  color: #737373;
+  text-decoration: none;
 }
 
 footer ol li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+footer button {
+  background: #f5f6f7;
+  border: 1px solid #ccd0d5;
+  padding: 0 8px;
+  cursor: pointer;
 }
 
 footer small {
-    font-size: 10px;
-    padding: 10px;
-}
-
-@media (max-width: 900px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-    gap: 20px;
-  }
-
-p {
-    font-size: 24px;
-    width: 400px;
-    line-height: 1.2;
-  }
-
-  .container .left {
-    margin-top: 40px;
-  }
+  display: block;
+  font-size: 11px;
+  color: #737373;
+  margin-top: 15px;
 }
