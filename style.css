@@ -51,7 +51,7 @@ p {
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   margin-bottom: 5px;
   line-height: 10px;
 }
