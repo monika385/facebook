@@ -186,7 +186,6 @@ body{
     text-align: left;
      line-height: 1.2;
     word-spacing: 2px;
-    padding-bottom: 8px;
 }
 
 .f-lg-footer ul li {
@@ -208,10 +207,10 @@ body{
     border-top: 1px solid #dddfe2;
     margin: 10px 0;
     margin-top: -13px;
-    margin-bottom: 16px;
 }
 
 .meta-copy {
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 11px;
     color: #737373;
