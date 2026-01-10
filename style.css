@@ -190,12 +190,13 @@ body{
     list-style: none;
     padding: 0;
     margin: 8px 0;
-    word-spacing: -2px;
+    word-spacing: -3px;
 }
 
 .footer-languages ul li {
     display: inline-block;
     margin-right: 10px;
+     
 }
 
 .footer-languages ul li a {
@@ -253,7 +254,6 @@ body{
     border: 1px solid #ccd0d5;
     border-radius: 2px;
     font-size: 22px;
-    color: #181717;
     cursor: pointer;
     line-height: 1;
     background-color: #f5f6f7;
@@ -261,6 +261,7 @@ body{
     background-image: url(/rsrc.php/v4/yB/r/sQkNqpqx9ne.png);
     background-size: auto;
     background-repeat: no-repeat;
+    text-decoration: none;
 }
 
 .add-lang-btn:hover {
@@ -313,7 +314,7 @@ body{
   }
 
   .content > div {
-    width: 100%;
+    width: 120%;
   }
 
   .f-logo {
@@ -380,10 +381,10 @@ body{
     justify-content: center;
     width: 28px;
     height: 18px;
+    color: #4b4f56;
     border: 1px solid #ccd0d5;
     border-radius: 2px;
     font-size: 22px;
-    color: #181717;
     cursor: pointer;
     line-height: 1;
     background-color: #f5f6f7;
