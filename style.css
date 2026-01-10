@@ -119,16 +119,24 @@ body{
     color: #0866ff;
     display: inline-block;
     margin: 20px 0;
-    margin-top: 3px;
     padding-top: 4px;
     padding-left: 2px;
     padding-right: 4px;
     padding-bottom: 15px;
     text-decoration: none;
+    margin-top: 3px;
+     margin-bottom: 7px;
 }
 
 .forgotten-password > a:hover{
     text-decoration: underline;
+}
+
+.forgotten-password {
+    text-align: center;
+    border-bottom: 1px solid #dddfe2;
+    margin-bottom: 26px;
+
 }
 
 
@@ -141,7 +149,6 @@ body{
     padding: 14px 16px;
     font-weight: 600;
     font-size: 17px;
-    margin-top: 16px;
     margin-right: 2px;
 }
 
@@ -170,69 +177,94 @@ body{
     text-decoration: underline;
 }
 
-.languages {
-    width: 100%;
+.footer {
     max-width: 1000px;
     margin: 30px auto;
     font-size: 12px;
     color: #737373;
-    margin-top: 27px;
-    word-spacing: -4px;
+    margin-top: 26px;
+    padding-right: 7px;
 }
 
-.languages ul {
+.footer-languages ul {
+    list-style: none;
     padding: 0;
     margin: 8px 0;
-    list-style: none;
-    text-align: left;
-     line-height: 1.2;
-    word-spacing: 2px;
+    word-spacing: -2px;
 }
 
-.languages ul li {
+.footer-languages ul li {
     display: inline-block;
     margin-right: 10px;
-    margin-bottom: 4px;
 }
 
-.languages ul li a {
+.footer-languages ul li a {
     text-decoration: none;
     color: #8a8d91;
 }
 
-.languages ul li a:hover {
+.footer-languages ul li a:hover {
     text-decoration: underline;
 }
 
-.divider {
+.footer-divider {
     border-top: 1px solid #dddfe2;
-    margin: 10px 0;
-    margin-top: -13px;
+    margin: 5px 0;
+
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    line-height: 1.6;
+    margin-bottom: 21px;
+    word-spacing: 0.5px;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 16.1px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #8a8d91;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
 }
 
 .meta-copy {
-     color: #737373;  
-     font-size: 11px;
-     padding-top: 20px;
-     margin-top: 20px;
-     word-spacing: 1px;
+    margin-top: 20px;
+    font-size: 11px;
+    color: #737373;
 }
 
 .add-lang-btn {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    border: 1px solid #ccd0d5;
-    color: #777;
-    background: #f5f6f7;
-    font-weight: bold;
     text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 18px;
+    border: 1px solid #ccd0d5;
+    border-radius: 2px;
+    font-size: 22px;
+    color: #181717;
+    cursor: pointer;
+    line-height: 1;
+    background-color: #f5f6f7;
+    padding-top: 1px;
+    background-image: url(/rsrc.php/v4/yB/r/sQkNqpqx9ne.png);
+    background-size: auto;
+    background-repeat: no-repeat;
 }
 
 .add-lang-btn:hover {
-    background: #f0f2f5;
+    background: #ffffff;
 }
 
 .adchoices img {
@@ -250,66 +282,142 @@ body{
     background-size: 12px 12px;
 }
 
+.adchoices-link {
+    text-decoration: none; 
+    color: inherit; 
+    outline: none; 
+}
 
-
-@media (max-width: 320px) {
-
-    .container {
-        padding-top: 0;
-        padding-bottom: 20px;
-        background: #ffffff;
-    }
-
-    .content {
-        width: 100%;
-        margin: 0;
-    }
-
-    .content > div {
-        display: block;
-        width: 100%;
-    }
-
-    .f-logo {
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    .f-logo img {
-        height: 50px;
-        margin: -40px auto;
-    }
-
-    .f-quote {
-       font-size: 28px;
-       font-weight: 500;
-       color: #333;
-    }
-
- @media (screen) (max-width: 601px) {
-    
- }   
-    .card {
-        width: 100%;
-        margin-top: 20px;
-        background: #fff !important;
-        height: 346px;
-        border-radius: 10px;
-        box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
-        padding: 10px 16px;
-        padding-top: 10px;
-        box-sizing: border-box;
-        margin-top: 44px;
-    }
+.adchoices-link:hover,
+.adchoices-link:focus,
+.adchoices-link:active {
+    text-decoration: none; 
 }
 
 
-@media (max-width: 980px) {
-    .m-footer {
-        display: block;
-        text-align: center;
-        font-size: 12px;
-        color: #777;
-        margin-top: 30px;
-    }
+@media (max-width: 520px) {
+
+  .container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f0f2f5;
+    margin-top: -120px;
+  }
+
+  .content {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content > div {
+    width: 100%;
+  }
+
+  .f-logo {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .f-logo img {
+    height: 100px;
+    margin: 0 auto; 
+    margin-left: -3px;
+  }
+
+
+  .f-quote {
+    font-size: 25px;
+    font-weight: 400;
+    color: #1c1e21;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 24px;
+    margin-top: -10px;
+    margin-left: 10px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%),
+                0 8px 16px rgb(0 0 0 / 10%);
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+  }
+
+  
+.crt-page{
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    padding-left: 5px;
+    padding-top: 40px;
+    margin-right: 8px;
 }
+
+.crt-page > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+}
+
+.crt-page > a:hover {
+    text-decoration: underline;
+}
+
+.add-lang-btn {
+    display: inline-block;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 18px;
+    border: 1px solid #ccd0d5;
+    border-radius: 2px;
+    font-size: 22px;
+    color: #181717;
+    cursor: pointer;
+    line-height: 1;
+    background-color: #f5f6f7;
+    padding-top: 1px;
+    background-image: url(/rsrc.php/v4/yB/r/sQkNqpqx9ne.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+
+.add-lang-btn:hover {
+  background: #f0f2f5;
+}
+
+@media (max-width: 520px) {
+  .footer {
+    font-size: 12px;
+    width: 80%;
+  }
+
+  .footer-lang,
+  .footer-links {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .footer a {
+    margin-right: 0;
+  }
+
+  .footer-copy {
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+}
+
