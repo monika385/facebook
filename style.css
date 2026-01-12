@@ -30,10 +30,12 @@ body{
     padding-right: 18px;
     box-sizing: border-box;
 }
+
 .f-logo{
     margin: 112px 0 16px;
     margin-bottom: 17px;
 }
+
 .f-logo > img{
     height: 106px;
     margin: -28px;
@@ -50,7 +52,7 @@ body{
     width: 396px;
     height: 350px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
     padding: 10px 16px;
     padding-left: 16px;
     padding-top: 11px;
@@ -125,7 +127,7 @@ body{
     padding-bottom: 15px;
     text-decoration: none;
     margin-top: 3px;
-     margin-bottom: 7px;
+    margin-bottom: 7px;
 }
 
 .forgotten-password > a:hover{
@@ -159,18 +161,20 @@ body{
 }
 
 .crt-page{
-    color: #000;
+    color: #1c1e21;
     text-align: center;
     padding: 20px 0;
     padding-left: 5px;
     padding-top: 30px;
     margin-right: 8px;
+    padding-top: -14px;
 }
 
 .crt-page > a {
     text-decoration: none;
     font-weight: bold;
-    color: #000;
+    color: #1c1e21;
+    padding-top: -3px;
 }
 
 .crt-page > a:hover {
@@ -184,19 +188,23 @@ body{
     color: #737373;
     margin-top: 26px;
     padding-right: 7px;
+    padding-left: 10px;
 }
 
 .footer-languages ul {
     list-style: none;
     padding: 0;
     margin: 8px 0;
-    word-spacing: -3px;
+    word-spacing: -5px;
+    padding-left: -2px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    
 }
 
 .footer-languages ul li {
     display: inline-block;
-    margin-right: 10px;
-     
+    margin-right: 11px;  
 }
 
 .footer-languages ul li a {
@@ -208,40 +216,6 @@ body{
     text-decoration: underline;
 }
 
-.footer-divider {
-    border-top: 1px solid #dddfe2;
-    margin: 5px 0;
-
-}
-
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 8px 0;
-    line-height: 1.6;
-    margin-bottom: 21px;
-    word-spacing: 0.5px;
-}
-
-.footer-links ul li {
-    display: inline-block;
-    margin-right: 16.1px;
-}
-
-.footer-links ul li a {
-    text-decoration: none;
-    color: #8a8d91;
-}
-
-.footer-links ul li a:hover {
-    text-decoration: underline;
-}
-
-.meta-copy {
-    margin-top: 20px;
-    font-size: 11px;
-    color: #737373;
-}
 
 .add-lang-btn {
     display: inline-block;
@@ -257,15 +231,56 @@ body{
     cursor: pointer;
     line-height: 1;
     background-color: #f5f6f7;
-    padding-top: 1px;
     background-image: url(/rsrc.php/v4/yB/r/sQkNqpqx9ne.png);
     background-size: auto;
     background-repeat: no-repeat;
     text-decoration: none;
+    color: #4b4f56;
+    vertical-align: middle;
 }
 
 .add-lang-btn:hover {
     background: #ffffff;
+}
+
+.footer-divider {
+    border-top: 1px solid #dddfe2;
+    margin: 5px 0;
+    width: 100%;
+    margin-top: -4px;
+    padding: 0 !important;
+    position: relative;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    line-height: 1.6;
+    margin-bottom: 19px;
+    word-spacing: 0.5px;
+    letter-spacing: 7%;
+    box-sizing: border-box;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #8a8d91;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.meta-copy {
+    margin-top: 20px;
+    font-size: 11px;
+    color: #737373;
 }
 
 .adchoices img {
@@ -299,6 +314,7 @@ body{
 @media (max-width: 520px) {
 
   .container {
+    display: grid;
     padding-top: 20px;
     padding-bottom: 20px;
     background: #f0f2f5;
@@ -346,8 +362,7 @@ body{
     margin: 20px auto;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%),
-                0 8px 16px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 4px #0000001a, 0 8px 16px #0000001a;
     padding: 16px;
     box-sizing: border-box;
     margin-bottom: 70px;
@@ -355,18 +370,19 @@ body{
 
   
 .crt-page{
-    color: #000;
+    color: #1c1e21;
     text-align: center;
     padding: 20px 0;
     padding-left: 5px;
-    padding-top: 40px;
     margin-right: 8px;
+    margin-top: -60px;
+    margin-bottom: 90px;
 }
 
 .crt-page > a {
     text-decoration: none;
     font-weight: bold;
-    color: #000;
+    color: #1c1e21;
 }
 
 .crt-page > a:hover {
@@ -381,7 +397,7 @@ body{
     justify-content: center;
     width: 28px;
     height: 18px;
-    color: #4b4f56;
+    color: #1c1e21;
     border: 1px solid #ccd0d5;
     border-radius: 2px;
     font-size: 22px;
@@ -402,6 +418,7 @@ body{
   .footer {
     font-size: 12px;
     width: 80%;
+    
   }
 
   .footer-lang,
