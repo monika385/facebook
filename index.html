@@ -62,8 +62,7 @@
         <li><a class="_sv4" dir="ltr" href="https://en-gb.facebook.com/" title="Tamil" id="u_0_7_i2">தமிழ்</a></li>
         <li><a class="_sv4" dir="ltr" href="https://ta-in.facebook.com/" title="Telugu" id="u_0_8_mL">తెలుగు</a></li>
         <li><a class="_sv4" dir="ltr" href="https://te-in.facebook.com/" title="Kannada" id="u_0_9_aP">മലയാളം</a></li>
-        <li><a class="_sv4" dir="ltr" href="https://kn-in.facebook.com/" title="Urdu" id="u_0_a_r3">Français(France)</a>
-        </li>
+        <li><a class="_sv4" dir="ltr" href="https://kn-in.facebook.com/" title="Urdu" id="u_0_a_r3">Français(France)</a></li>
         <li><a class="_sv4" dir="ltr" href="https://ur-pk.facebook.com/" title="Hindi" id="u_0_b_mu">हिन्दी</a></li>
         <li><a class="_sv4" dir="ltr" href="https://hi-in.facebook.com/" title="Malayalam" id="u_0_c_m7">اردو</a></li>
         <li><a class="_sv4" dir="ltr" href="https://ml-in.facebook.com/" title="Sinhala" id="u_0_d_Tx">ಕನ್ನಡ</a></li>
@@ -72,7 +71,9 @@
         <li><a class="_sv4" dir="ltr" href="https://bn-in.facebook.com/" title="Gujarati" id="u_0_g_7p">Deutsch</a></li>
 
         <li class="more-lang">
-        <a href="#" class="add-lang-btn">+</a>
+        <a href="javascript:void(0)" id="openLangBtn" class="add-lang-btn">+</a>
+
+
           <a role="button" class="_42ft _4jy0 _517i _517h _51sy" rel="dialog"
             ajaxify="/settings/language/language/?uri=https%3A%2F%2Fde-de.facebook.com%2F&amp;source=www_list_selector_more"
             href="#" title="Show more languages"><i class="img sp_GPvE0syHYuh sx_8e0301"></i></a>
@@ -80,375 +81,80 @@
         </li>
       </ul>
 
-    <style>
-      
-        /* Overlay */
-        .overlay {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.6);
-            z-index: 999;
-        }
+      <!-- Overlay -->
+<div class="overlay" id="languageOverlay" onclick="closeLangPopup()"></div>
 
-        .overlay.active {
-            display: block;
-        }
+<!-- Popup Box -->
+<div class="lang-popup" id="languagePopup">
+  <div class="lang-header">
+    <span>Select your language</span>
+  </div>
 
-        /* Popup */
-        .popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-            width: 90%;
-            max-width: 800px;
-            max-height: 85vh;
-            z-index: 1000;
-        }
+  <div class="clearfix">
+    <li>Suggested languages</li>
+    <li>English (UK) ✓</li>
+    <li>தமிழ்</li>
+    <li>తెలుగు</li>
+    <li>മലയാളം</li>
+  </div>
 
-        .popup.active {
-            display: block;
-        }
 
-        /* Popup Header */
-        .popup-header {
-            background-color: #4267b2;
-            color: white;
-            padding: 15px 20px;
-            border-radius: 8px 8px 0 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+<div class="divider-line"></div>
+  <div class="lang-body">
+    <p>English (US)</p>
+    <p>English (UK)</p>
+    <p>Deutsch</p>
+    <p>Français</p>
+    <p>Español</p>
+    <p>Italiano</p>
+    <p>Português</p>
+    <p>Nederlands</p>
+    <p>Polski</p>
+    <p>Čeština</p>
+    <p>Dansk</p>
+    <p>Suomi</p>
+    <p>Русский</p>
+    <p>Українська</p>
+    <p>Türkçe</p>
+    <p>Ελληνικά</p>
+    <p>العربية</p>
+    <p>فارسی</p>
+    <p>עברית</p>
+    <p>हिन्दी</p>
+    <p>मराठी</p>
+    <p>বাংলা</p>
+    <p>ગુજરાતી</p>
+    <p>ਪੰਜਾਬੀ</p>
+    <p>தமிழ்</p>
+    <p>తెలుగు</p>
+    <p>ಕನ್ನಡ</p>
+    <p>മലയാളം</p>
+    <p>සිංහල</p>
+    <p>ไทย</p>
+    <p>Tiếng Việt</p>
+    <p>Bahasa Indonesia</p>
+    <p>Bahasa Melayu</p>
+    <p>Filipino</p>
+    <p>한국어</p>
+    <p>日本語</p>
+    <p>中文(简体)</p>
+    <p>中文(繁體)</p>
+    <p>नेपाली</p>
+    <p>اردو</p>
+    <p>پښتو</p>
+    <p>አማርኛ</p>
+    <p>Kiswahili</p>
+    <p>Shqip</p>
+    <p>Română</p>
+    <p>Magyar</p>
+  </div>
 
-        .popup-header h2 {
-            font-size: 18px;
-            font-weight: 600;
-        }
+  <div class="lang-footer">
+    <button id="closeLangBtn">Close</button>
+  </div>
+</div>
 
-        .close-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-            padding: 0;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            transition: background-color 0.3s;
-        }
 
-        .close-btn:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-
-        /* Popup Content */
-        .popup-content {
-            padding: 20px;
-            max-height: calc(85vh - 120px);
-            overflow-y: auto;
-        }
-
-        .suggested-section {
-            margin-bottom: 25px;
-        }
-
-        .section-title {
-            color: #8a8d91;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 12px;
-            text-transform: uppercase;
-        }
-
-        .suggested-languages {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .suggested-lang {
-            padding: 8px 16px;
-            background-color: #e4e6eb;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 15px;
-            transition: background-color 0.2s;
-        }
-
-        .suggested-lang:hover {
-            background-color: #d8dadf;
-        }
-
-        .suggested-lang.selected {
-            background-color: #1877f2;
-            color: white;
-        }
-
-        .languages-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 8px;
-            margin-top: 15px;
-        }
-
-        .language-category {
-            margin-bottom: 20px;
-        }
-
-        .category-header {
-            color: #8a8d91;
-            font-size: 13px;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-
-        .language-item {
-            padding: 10px 12px;
-            cursor: pointer;
-            font-size: 14px;
-            color: #050505;
-            transition: background-color 0.2s;
-            border-radius: 4px;
-        }
-
-        .language-item:hover {
-            background-color: #f2f3f5;
-        }
-
-        /* Popup Footer */
-        .popup-footer {
-            padding: 15px 20px;
-            border-top: 1px solid #e4e6eb;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .close-footer-btn {
-            background-color: #1877f2;
-            color: white;
-            border: none;
-            padding: 10px 24px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 15px;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
-
-        .close-footer-btn:hover {
-            background-color: #166fe5;
-        }
-
-        /* Scrollbar Styling */
-        .popup-content::-webkit-scrollbar {
-            width: 8px;
-        }
-
-        .popup-content::-webkit-scrollbar-track {
-            background: #f1f1f1;
-        }
-
-        .popup-content::-webkit-scrollbar-thumb {
-            background: #888;
-            border-radius: 4px;
-        }
-
-        .popup-content::-webkit-scrollbar-thumb:hover {
-            background: #555;
-        }
-    </style>
-</head>
-<body>
-
-    <!-- Overlay -->
-    <div class="overlay" id="languageOverlay"></div>
-
-    <!-- Language Popup -->
-    <div class="popup" id="languagePopup">
-        <div class="popup-header">
-            <h2>Select your language</h2>
-            <button class="close-btn" id="closeBtn">×</button>
-        </div>
-
-        <div class="popup-content">
-            <!-- Suggested Languages -->
-            <div class="suggested-section">
-                <div class="section-title">Suggested languages</div>
-                <div class="suggested-languages">
-                    <div class="suggested-lang selected">English (UK) ✓</div>
-                    <div class="suggested-lang">தமிழ்</div>
-                    <div class="suggested-lang">తెలుగు</div>
-                    <div class="suggested-lang">മലയാളം</div>
-                </div>
-            </div>
-
-            <div class="section-title">All languages</div>
-
-            <!-- Africa and Middle East -->
-            <div class="language-category">
-                <div class="category-header">Africa and Middle East</div>
-                <div class="languages-grid">
-                    <div class="language-item">Af-Soomaali</div>
-                    <div class="language-item">Afrikaans</div>
-                    <div class="language-item">Azərbaycan dili</div>
-                    <div class="language-item">Hausa</div>
-                    <div class="language-item">Kiswahili</div>
-                    <div class="language-item">עברית</div>
-                    <div class="language-item">العربية</div>
-                    <div class="language-item">فارسی</div>
-                </div>
-            </div>
-
-            <!-- Americas -->
-            <div class="language-category">
-                <div class="category-header">Americas</div>
-                <div class="languages-grid">
-                    <div class="language-item">English (US)</div>
-                    <div class="language-item">Español</div>
-                    <div class="language-item">Español (España)</div>
-                    <div class="language-item">Français (Canada)</div>
-                    <div class="language-item">Français (France)</div>
-                    <div class="language-item">Português (Brasil)</div>
-                </div>
-            </div>
-
-            <!-- Asia-Pacific -->
-            <div class="language-category">
-                <div class="category-header">Asia-Pacific</div>
-                <div class="languages-grid">
-                    <div class="language-item">Bahasa Indonesia</div>
-                    <div class="language-item">Bahasa Melayu</div>
-                    <div class="language-item">Filipino</div>
-                    <div class="language-item">日本語</div>
-                    <div class="language-item">한국어</div>
-                    <div class="language-item">中文(简体)</div>
-                    <div class="language-item">中文(繁體)</div>
-                    <div class="language-item">ไทย</div>
-                    <div class="language-item">Tiếng Việt</div>
-                    <div class="language-item">हिन्दी</div>
-                    <div class="language-item">తెలుగు</div>
-                    <div class="language-item">தமிழ்</div>
-                    <div class="language-item">മലയാളം</div>
-                    <div class="language-item">ಕನ್ನಡ</div>
-                    <div class="language-item">বাংলা</div>
-                    <div class="language-item">ગુજરાતી</div>
-                    <div class="language-item">मराठी</div>
-                    <div class="language-item">ਪੰਜਾਬੀ</div>
-                </div>
-            </div>
-
-            <!-- Eastern Europe -->
-            <div class="language-category">
-                <div class="category-header">Eastern Europe</div>
-                <div class="languages-grid">
-                    <div class="language-item">Bosanski</div>
-                    <div class="language-item">Български</div>
-                    <div class="language-item">Čeština</div>
-                    <div class="language-item">Ελληνικά</div>
-                    <div class="language-item">Latviešu</div>
-                    <div class="language-item">Lietuvių</div>
-                    <div class="language-item">Magyar</div>
-                    <div class="language-item">Македонски</div>
-                    <div class="language-item">Polski</div>
-                    <div class="language-item">Română</div>
-                    <div class="language-item">Русский</div>
-                    <div class="language-item">Српски</div>
-                    <div class="language-item">Slovenčina</div>
-                    <div class="language-item">Slovenščina</div>
-                    <div class="language-item">Українська</div>
-                </div>
-            </div>
-
-            <!-- Western Europe -->
-            <div class="language-category">
-                <div class="category-header">Western Europe</div>
-                <div class="languages-grid">
-                    <div class="language-item">Basa Jawa</div>
-                    <div class="language-item">Brezhoneg</div>
-                    <div class="language-item">Català</div>
-                    <div class="language-item">Corsu</div>
-                    <div class="language-item">Cymraeg</div>
-                    <div class="language-item">Dansk</div>
-                    <div class="language-item">Deutsch</div>
-                    <div class="language-item">Eesti</div>
-                    <div class="language-item">English (UK)</div>
-                    <div class="language-item">Euskara</div>
-                    <div class="language-item">Føroyskt</div>
-                    <div class="language-item">Frysk</div>
-                    <div class="language-item">Furlan</div>
-                    <div class="language-item">Gaeilge</div>
-                    <div class="language-item">Gàidhlig</div>
-                    <div class="language-item">Galego</div>
-                    <div class="language-item">Hrvatski</div>
-                    <div class="language-item">Íslenska</div>
-                    <div class="language-item">Italiano</div>
-                    <div class="language-item">Nederlands</div>
-                    <div class="language-item">Norsk (bokmål)</div>
-                    <div class="language-item">Norsk (nynorsk)</div>
-                    <div class="language-item">Português (Portugal)</div>
-                    <div class="language-item">Shqip</div>
-                    <div class="language-item">Suomi</div>
-                    <div class="language-item">Svenska</div>
-                    <div class="language-item">Türkçe</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="popup-footer">
-            <button class="close-footer-btn" id="closeFooterBtn">Close</button>
-        </div>
-    </div>
-
-    <script>
-        // Popup Functions
-        function openLanguagePopup() {
-            document.getElementById('languagePopup').classList.add('active');
-            document.getElementById('languageOverlay').classList.add('active');
-        }
-
-        function closeLanguagePopup() {
-            document.getElementById('languagePopup').classList.remove('active');
-            document.getElementById('languageOverlay').classList.remove('active');
-        }
-
-        // Close button events
-        document.getElementById('closeBtn').addEventListener('click', closeLanguagePopup);
-        document.getElementById('closeFooterBtn').addEventListener('click', closeLanguagePopup);
-        document.getElementById('languageOverlay').addEventListener('click', closeLanguagePopup);
-
-        // Language selection
-        const suggestedLangs = document.querySelectorAll('.suggested-lang');
-        suggestedLangs.forEach(lang => {
-            lang.addEventListener('click', function() {
-                suggestedLangs.forEach(l => l.classList.remove('selected'));
-                this.classList.add('selected');
-            });
-        });
-
-        const languageItems = document.querySelectorAll('.language-item');
-        languageItems.forEach(item => {
-            item.addEventListener('click', function() {
-                console.log('Selected language:', this.textContent);
-                // Inga neenga language select logic add pannalam
-            });
-        });
-    </script>
-</body>
-</html>
       
       <div class="footer-divider">
         <div class="footer-links">
@@ -515,6 +221,23 @@
           </ol>
         </div>
       </div>
+
+<script>
+document.getElementById("openLangBtn").addEventListener("click", function(e){
+  e.preventDefault(); 
+  document.getElementById("languagePopup").style.display = "block";
+  document.getElementById("languageOverlay").style.display = "block";
+});
+
+document.getElementById("closeLangBtn").addEventListener("click", closePopup);
+document.getElementById("languageOverlay").addEventListener("click", closePopup);
+
+function closePopup(){
+  document.getElementById("languagePopup").style.display = "none";
+  document.getElementById("languageOverlay").style.display = "none";
+}
+</script>
+
 
     </footer>
 </body>
