@@ -90,64 +90,163 @@
     <span>Select your language</span>
   </div>
 
-  <div class="clearfix">
-    <li>Suggested languages</li>
-    <li>English (UK) ✓</li>
-    <li>தமிழ்</li>
-    <li>తెలుగు</li>
-    <li>മലയാളം</li>
-  </div>
+  <div class="suggested-lang">
+  <span class="suggested-title">Suggested languages</span>
+
+  <span class="lang active">English (UK) ✓</span>
+  <span class="lang">தமிழ்</span>
+  <span class="lang">తెలుగు</span>
+  <span class="lang">മലയാളം</span>
+</div>
+
+<div class="suggested-divider"></div>
 
 
 <div class="divider-line"></div>
-  <div class="lang-body">
-    <p>English (US)</p>
-    <p>English (UK)</p>
-    <p>Deutsch</p>
-    <p>Français</p>
-    <p>Español</p>
-    <p>Italiano</p>
-    <p>Português</p>
-    <p>Nederlands</p>
-    <p>Polski</p>
-    <p>Čeština</p>
-    <p>Dansk</p>
-    <p>Suomi</p>
-    <p>Русский</p>
-    <p>Українська</p>
-    <p>Türkçe</p>
-    <p>Ελληνικά</p>
-    <p>العربية</p>
-    <p>فارسی</p>
-    <p>עברית</p>
-    <p>हिन्दी</p>
-    <p>मराठी</p>
-    <p>বাংলা</p>
-    <p>ગુજરાતી</p>
-    <p>ਪੰਜਾਬੀ</p>
-    <p>தமிழ்</p>
-    <p>తెలుగు</p>
-    <p>ಕನ್ನಡ</p>
-    <p>മലയാളം</p>
-    <p>සිංහල</p>
-    <p>ไทย</p>
-    <p>Tiếng Việt</p>
-    <p>Bahasa Indonesia</p>
-    <p>Bahasa Melayu</p>
-    <p>Filipino</p>
-    <p>한국어</p>
-    <p>日本語</p>
-    <p>中文(简体)</p>
-    <p>中文(繁體)</p>
-    <p>नेपाली</p>
-    <p>اردو</p>
-    <p>پښتو</p>
-    <p>አማርኛ</p>
-    <p>Kiswahili</p>
-    <p>Shqip</p>
-    <p>Română</p>
-    <p>Magyar</p>
+  
+<div class="language-popup">
+  <div class="language-grid">
+
+    <!-- COLUMN 1 : First 6 languages -->
+    <div class="lang-column first-column">
+      <p class="lang-item">All languages</p>
+      <p class="lang-item">Africa and Middle East</p>
+      <p class="lang-item">Americas</p>
+      <p class="lang-item">Asia-Pacific</p>
+      <p class="lang-item">Eastern Europe</p>
+      <p class="lang-item">Western Europe</p>
+    </div>
+
+    <!-- COLUMN 2 : next 28 languages -->
+    <div class="lang-column">
+      <p class="lang-item">Af-Soomaali</p>
+      <p class="lang-item">Afrikaans</p>
+      <p class="lang-item">Azərbaycan dili</p>
+      <p class="lang-item">Bahasa Indonesia</p>
+      <p class="lang-item">Bahasa Melayu</p>
+      <p class="lang-item">Basa Jawa</p>
+      <p class="lang-item">Bisaya</p>
+      <p class="lang-item">Bosanski</p>
+      <p class="lang-item">Brezhoneg</p>
+      <p class="lang-item">Català</p>
+      <p class="lang-item">Corsu</p>
+      <p class="lang-item">Cymraeg</p>
+      <p class="lang-item">Dansk</p>
+      <!-- <p class="lang-item">Deutsch</p>
+      <p class="lang-item">Eesti</p>
+      <p class="lang-item">English (UK)</p>
+      <p class="lang-item">English (US)</p>
+      <p class="lang-item">Español</p> -->
+      <p class="lang-item">Español (España)</p>
+      <p class="lang-item">Euskara</p>
+      <p class="lang-item">Filipino</p>
+      <p class="lang-item">Français (Canada)</p>
+      <p class="lang-item">Français (France)</p>
+      <p class="lang-item">Frysk</p>
+      <p class="lang-item">Fula</p>
+      <p class="lang-item">Furlan</p>
+      <p class="lang-item">Føroyskt</p>
+      <p class="lang-item">Gaeilge</p>
+    </div>
+
+    <!-- COLUMN 3 : next 28 languages -->
+    <div class="lang-column">
+      <p class="lang-item">Galego</p>
+      <p class="lang-item">Guarani</p>
+      <p class="lang-item">Hausa</p>
+      <p class="lang-item">Hrvatski</p>
+      <p class="lang-item">Ikinyarwanda</p>
+      <p class="lang-item">Inuktitut</p>
+      <p class="lang-item">Italiano</p>
+      <p class="lang-item">Iñupiatun</p>
+      <p class="lang-item">Kiswahili</p>
+      <p class="lang-item">Kreyòl Ayisyen</p>
+      <!-- <p class="lang-item">Kurdî (Kurmancî)</p>
+      <p class="lang-item">Latviešu</p>
+      <p class="lang-item">Lietuvių</p>
+      <p class="lang-item">Magyar</p>
+      <p class="lang-item">Malagasy</p> -->
+      <p class="lang-item">Malti</p>
+      <p class="lang-item">Nederlands</p>
+      <p class="lang-item">Norsk (bokmål)</p>
+      <p class="lang-item">Norsk (nynorsk)</p>
+      <p class="lang-item">O'zbek</p>
+      <p class="lang-item">Polski</p>
+      <p class="lang-item">Português (Brasil)</p>
+      <p class="lang-item">Português (Portugal)</p>
+      <p class="lang-item">Română</p>
+      <p class="lang-item">Sardu</p>
+      <p class="lang-item">Shona</p>
+      <p class="lang-item">Shqip</p>
+      <p class="lang-item">Slovenčina</p>
+    </div>
+
+    <!-- COLUMN 4 : next 28 languages -->
+    <div class="lang-column">
+      <p class="lang-item">Slovenščina</p>
+      <p class="lang-item">Suomi</p>
+      <p class="lang-item">Svenska</p>
+      <p class="lang-item">Tiếng Việt</p>
+      <p class="lang-item">Türkçe</p>
+      <p class="lang-item">Vlaams</p>
+      <p class="lang-item">Zaza</p>
+      <p class="lang-item">Íslenska</p>
+      <p class="lang-item">Čeština</p>
+      <p class="lang-item">ślōnskŏ gŏdka</p>
+      <p class="lang-item">Ελληνικά</p>
+      <p class="lang-item">Беларуская</p>
+      <p class="lang-item">Български</p>
+      <!-- <p class="lang-item">Македонски</p>
+      <p class="lang-item">Монгол</p>
+      <p class="lang-item">Русский</p>
+      <p class="lang-item">Српски</p>
+      <p class="lang-item">Татарча</p> -->
+      <p class="lang-item">Тоҷикӣ</p>
+      <p class="lang-item">Українська</p>
+      <p class="lang-item">кыргызча</p>
+      <p class="lang-item">Қазақша</p>
+      <p class="lang-item">Հայերեն</p>
+      <p class="lang-item">‏עברית‏</p>
+      <p class="lang-item">‏اردو‏</p>
+      <p class="lang-item">‏العربية‏</p>
+      <p class="lang-item">‏فارسی‏</p>
+      <p class="lang-item">‏پښتو‏</p>
+      <p class="lang-item">‏کوردیی ناوەندی‏</p>
+    </div>
+
+    <!-- COLUMN 5 : remaining languages -->
+    <div class="lang-column">
+      <p class="lang-item">‏ܣܘܪܝܝܐ‏</p>
+      <!-- <p class="lang-item">नेपाली</p>
+      <p class="lang-item">मराठी</p>
+      <p class="lang-item">हिन्दी</p>
+      <p class="lang-item">অসমীয়া</p>
+      <p class="lang-item">বাংলা</p> -->
+      <p class="lang-item">ਪੰਜਾਬੀ</p>
+      <p class="lang-item">ગુજરાતી</p>
+      <p class="lang-item">ଓଡ଼ିଆ</p>
+      <p class="lang-item">தமிழ்</p>
+      <p class="lang-item">తెలుగు</p>
+      <p class="lang-item">ಕನ್ನಡ</p>
+      <p class="lang-item">മലയാളം</p>
+      <p class="lang-item">සිංහල</p>
+      <p class="lang-item">ภาษาไทย</p>
+      <p class="lang-item">ພາສາລາວ</p>
+      <p class="lang-item">မြန်မာဘာသာ</p>
+      <p class="lang-item">ქართული</p>
+      <p class="lang-item">አማርኛ</p>
+      <p class="lang-item">ភាសាខ្មែរ</p>
+      <p class="lang-item">ⵜⴰⵎⴰⵣⵉⵖⵜ</p>
+      <p class="lang-item">中文(台灣)</p>
+      <p class="lang-item">中文(简体)</p>
+      <p class="lang-item">中文(香港)</p>
+      <p class="lang-item">日本語</p>
+      <p class="lang-item">日本語(関西)</p>
+      <p class="lang-item">한국어</p>
+    </div>
+
   </div>
+</div>
 
   <div class="lang-footer">
     <button id="closeLangBtn">Close</button>
@@ -155,7 +254,6 @@
 </div>
 
 
-      
       <div class="footer-divider">
         <div class="footer-links">
           <ul>
