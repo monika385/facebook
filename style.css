@@ -144,7 +144,6 @@ body{
     margin-bottom: 26px;
 }
 
-
 .crt-new-ac {
     display: inline-block;
     background: #42b72a;
@@ -157,7 +156,6 @@ body{
     margin-right: 2px;
     padding-right: -1px;
 }
-
 
 .crt-new-ac:hover {
   background-color: #36a420;
@@ -219,7 +217,6 @@ body{
 .footer-languages ul li a:hover {
     text-decoration: underline;
 }
-
 
 .add-lang-btn {
     display: inline-block;
@@ -598,7 +595,7 @@ body{
   }
 
   .content > div {
-    width: 120%;
+    width: 100%;
   }
 
   .f-logo {
@@ -611,7 +608,6 @@ body{
     margin: 0 auto; 
     margin-left: -3px;
   }
-
 
   .f-quote {
     font-size: 25px;
@@ -636,7 +632,6 @@ body{
     margin-bottom: 70px;
   }
 
-  
 .crt-page{
     color: #1c1e21;
     text-align: center;
@@ -686,7 +681,6 @@ body{
   .footer {
     font-size: 12px;
     width: 80%;
-    
   }
 
   .footer-lang,
@@ -705,4 +699,30 @@ body{
   }
 }
 
+}
+
+@media (max-width: 520px) {
+
+  .lang-popup {
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+
+  .language-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lang-column {
+    width: 50%;
+  }
+
+  .suggested-lang {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-right: 0;
+  }
 }
