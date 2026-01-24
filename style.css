@@ -30,7 +30,7 @@ body{
     width: 576px;
     padding-right: 18px;
     box-sizing: border-box;
-    margin-right: 1px;
+
 }
 
 .f-logo {
@@ -67,7 +67,7 @@ body{
 .input-container > input[type=password] {
     width: 100%;
     padding: 15px 16px;
-    padding-left: 15px;
+    padding-left: 16px;
     margin-top: 8px;
     box-sizing: border-box;
     outline: none;
@@ -110,7 +110,6 @@ body{
     padding-left: 16px;
     padding-bottom: 12px;
     padding-top: 13px;
-    padding-left: 14px;
     margin: 10px 0;
     margin-top: 9px;
     cursor: pointer;
@@ -126,8 +125,6 @@ body{
     display: inline-block;
     margin: 20px 0;
     padding-top: 4px;
-    padding-left: 2px;
-    padding-right: 4px;
     padding-bottom: 15px;
     text-decoration: none;
     margin-top: 3px;
@@ -153,7 +150,6 @@ body{
     padding: 14px 16px;
     font-weight: 600;
     font-size: 17px;
-    margin-right: 2px;
     padding-right: -1px;
 }
 
@@ -717,7 +713,7 @@ body{
   }
 
   .lang-column {
-    width: 50%;
+    width: 100%;
   }
 
   .suggested-lang {
