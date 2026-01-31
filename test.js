@@ -1,22 +1,23 @@
-<script>
-    console.log("hello world");
-    console.log(x==5);
-    console.log(x===5);
+function sayHello() {
+  alert("Hello JavaScript!");
+}
 
-    const company = "Google";
-let employees = 100;
+let city = "Bangalore";
+console.log("City:", city);
 
-employees += 20;
+let a = 10;
+let b = 20;
+let c = 30;
 
-console.log(company);  
-console.log(employees);  
+let total = a + b + c;
 
-let x = 5;
-let y = 6;
-let z = x + y;
+console.log("Total:", total);
+console.log("Sum of a, b, and c is:", total);
 
-const x = 5;
-const y = 6;
-const z = x + y;
 
-</script>
+let name = "Monika";
+let course = "Frontend Development";
+
+console.log(`My name is ${name}.
+I live in ${city}.
+I am learning ${course}.`);
